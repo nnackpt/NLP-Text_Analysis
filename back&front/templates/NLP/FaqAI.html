@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>คำถามที่พบบ่อย</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-blue-300 min-h-screen p-6">
+    <!-- Navigation Bar -->
+    <div class="flex justify-end space-x-4 mb-6">
+      <button class="bg-pink-500 text-white px-4 py-2 rounded-lg">
+        คำถามที่พบบ่อย
+      </button>
+      <button
+        class="bg-blue-500 text-white px-4 py-2 rounded-lg"
+        onclick="location.href='smartreply.html'"
+      >
+        SmartReply AI
+      </button>
+      <button
+        class="bg-gray-300 text-black px-4 py-2 rounded-lg"
+        onclick="location.href='login.html'"
+      >
+        Login
+      </button>
+    </div>
+
+    <!-- Title -->
+    <h1 class="text-2xl font-bold text-center">คำถามที่พบบ่อย</h1>
+
+    <!-- Language Selection -->
+    <div class="flex justify-center mt-4">
+      <label class="text-lg mr-2">เลือกภาษา :</label>
+      <select class="bg-gray-200 p-2 rounded">
+        <option>ENG</option>
+        <option>TH</option>
+      </select>
+    </div>
+
+    <!-- FAQ Results Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mt-6">
+      <!-- Result Box -->
+      <div class="bg-white p-4 rounded-lg shadow-lg">
+        <span class="bg-yellow-400 text-white px-2 py-1 rounded">ผลลัพธ์</span>
+        <p class="text-gray-700 mt-2">อารมณ์: เป็นกลาง (ความพอใจ 0.5)</p>
+        <div class="bg-red-100 p-3 rounded mt-2">ข้อความจากลูกค้า</div>
+        <button class="bg-green-500 text-white px-4 py-2 rounded mt-2 w-full">
+          คำตอบ
+        </button>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow-lg">
+        <span class="bg-yellow-400 text-white px-2 py-1 rounded">ผลลัพธ์</span>
+        <p class="text-gray-700 mt-2">อารมณ์: เป็นกลาง (ความพอใจ 0.56)</p>
+        <div class="bg-red-100 p-3 rounded mt-2">ข้อความจากลูกค้า</div>
+        <button class="bg-green-500 text-white px-4 py-2 rounded mt-2 w-full">
+          คำตอบ
+        </button>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow-lg">
+        <span class="bg-yellow-400 text-white px-2 py-1 rounded">ผลลัพธ์</span>
+        <p class="text-gray-700 mt-2">อารมณ์: ไม่พอใจ (ความพอใจ 0.1)</p>
+        <div class="bg-red-100 p-3 rounded mt-2">ข้อความจากลูกค้า</div>
+        <button class="bg-green-500 text-white px-4 py-2 rounded mt-2 w-full">
+          คำตอบ
+        </button>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow-lg">
+        <span class="bg-yellow-400 text-white px-2 py-1 rounded">ผลลัพธ์</span>
+        <p class="text-gray-700 mt-2">อารมณ์: พอใจ (ความพอใจ 0.7)</p>
+        <div class="bg-red-100 p-3 rounded mt-2">ข้อความจากลูกค้า</div>
+        <button class="bg-green-500 text-white px-4 py-2 rounded mt-2 w-full">
+          คำตอบ
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

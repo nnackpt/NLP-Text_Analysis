@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartReply AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      function redirectToLogin() {
+        window.location.href = "login.html"; // กลับไปหน้าล็อกอิน
+      }
+      function goToFAQ() {
+        window.location.href = "FaqAI.html"; // เปลี่ยนให้ถูกต้องเป็น FaqAI.html
+      }
+    </script>
+  </head>
+  <body class="bg-blue-300 min-h-screen flex flex-col items-center p-4">
+    <nav class="w-full bg-gray-200 p-3 flex justify-end space-x-4">
+      <button
+        onclick="goToFAQ()"
+        class="bg-blue-500 text-white px-4 py-2 rounded-md"
+      >
+        คำถามที่พบบ่อย
+      </button>
+      <button class="bg-pink-500 text-white px-4 py-2 rounded-md">
+        SmartReply AI
+      </button>
+      <button
+        onclick="redirectToLogin()"
+        class="bg-blue-700 text-white px-4 py-2 rounded-md"
+      >
+        Logout
+      </button>
+    </nav>
+
+    <h1 class="text-2xl font-bold mt-4">SmartReply AI Powered by NLP</h1>
+
+    <div class="mt-4 flex items-center space-x-2">
+      <label for="language" class="text-lg">เลือกภาษา :</label>
+      <select id="language" class="border border-gray-400 rounded-md px-2 py-1">
+        <option>ENG</option>
+        <option>TH</option>
+      </select>
+    </div>
+
+    <div class="flex mt-6 space-x-6">
+      <div
+        class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center"
+      >
+        <div
+          class="bg-gray-300 w-40 h-40 flex justify-center items-center rounded-lg relative"
+        >
+          <div class="absolute top-0 w-full h-6 bg-blue-900"></div>
+        </div>
+        <button class="mt-4 bg-orange-500 text-white px-6 py-2 rounded-md">
+          วิเคราะห์ข้อความ
+        </button>
+      </div>
+
+      <div
+        class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center w-80"
+      >
+        <button class="bg-yellow-500 text-white px-6 py-2 rounded-md">
+          ผลลัพธ์
+        </button>
+        <p class="mt-4 text-lg">อารมณ์ : เป็นกลาง 😑 (ความพอใจ 0.63)</p>
+        <div class="bg-pink-100 w-full h-32 rounded-lg shadow-md mt-4"></div>
+      </div>
+    </div>
+  </body>
+</html>
